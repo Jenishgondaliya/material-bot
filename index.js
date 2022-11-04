@@ -72,7 +72,7 @@ bot.onText(/\/CE/, function onPhotoText(msg) {
           "💻Dowanload/" +
           "File Systems in Operating System 🧑‍💻\n" +
           "💻Dowanload/" +
-          "System Protection 🧑‍💻\n"
+          "System Protection 🧑‍💻 \n"
       );
 
       bot.onText(/\/inter-process-communication/, function onPhotoText(msg) {
