@@ -38,61 +38,60 @@ bot.onText(/\/CE/, function onPhotoText(msg) {
       "DAA🧑‍💻\n"
   );
 
-  bot.onText(/\/OS/, function onPhotoText(msg) {
+  bot.onText(/OS/, function onPhotoText(msg) {
     bot.sendMessage(
       chatId,
       "  For OS   \n" +
         "✌️first select your materials✌️\n" +
         "💻for PPT use command  /" +
-        "PPT🧑‍💻\n" +
+        "OS_PPT🧑‍💻\n" +
         "💻for FILES use command  /" +
-        "FILE🧑‍💻\n"
+        "OS_FILE🧑‍💻\n"
       //   "💻for QUE-BANK use command  /" +
       //   "FILE🧑‍💻\n"
     );
-    bot.onText(/\/PPT/, function onPhotoText(msg) {
+    bot.onText(/OS_PPT/, function onPhotoText(msg) {
       bot.sendMessage(
         chatId,
         "  For OS PPT all chapter   \n" +
           "✌️first select your chapter\n" +
-          "💻Dowanload/" +
-          "inter-process-communication 🧑‍💻\n" +
-          "💻Dowanload/" +
-          "UNIX File Systems 🧑‍💻\n" +
-          "💻Dowanload/" +
-          "basic operating 🧑‍💻\n" +
-          "💻Dowanload/" +
-          "process managment and scheduling 🧑‍💻\n" +
-          "💻Dowanload/" +
-          "Deadlock 🧑‍💻\n" +
-          "💻Dowanload/" +
-          " memory managment 🧑‍💻\n" +
-          "💻Dowanload/" +
-          "io managment 🧑‍💻\n" +
-          "💻Dowanload/" +
-          "File Systems in Operating System 🧑‍💻\n" +
-          "💻Dowanload/" +
-          "System Protection 🧑‍💻 \n"
+          "💻Dowanload" +
+          "/inter_process_communication 🧑‍💻\n" +
+          "/UNIX_File_Systems 🧑‍💻\n" +
+          "/basic_operating 🧑‍💻\n" +
+          "/process_managment_and_scheduling 🧑‍💻\n" +
+          "/Deadlock 🧑‍💻\n" +
+          "/memory_managment 🧑‍💻\n" +
+          "/io_managment 🧑‍💻\n" +
+          "/File_Systems_in_Operating_System 🧑‍💻\n" +
+          "/System_Protection 🧑‍💻 \n"
       );
 
-      bot.onText(/\/inter-process-communication/, function onPhotoText(msg) {
+      bot.onText(/\/inter_process_communication/, function onPhotoText(msg) {
+        bot.sendMessage(chatId, "waiting some time....⌛⌛⌛");
         bot.sendDocument(
           chatId,
           "src/CE/OS/PPT/ch-3-inter-process-communication.pptx"
         );
       });
-      bot.onText(/\/UNIX File Systems/, function onPhotoText(msg) {
+      bot.onText(/\/UNIX_File_Systems/, function onPhotoText(msg) {
+        bot.sendMessage(chatId, "waiting some time....⌛⌛⌛");
+
         bot.sendDocument(chatId, "src/CE/OS/PPT/ch-9 UNIX File Systems 2.pdf");
       });
-      bot.onText(/\/basic operating/, function onPhotoText(msg) {
+      bot.onText(/\/basic_operating/, function onPhotoText(msg) {
+        bot.sendMessage(chatId, "waiting some time....⌛⌛⌛");
+
         bot.sendDocument(
           chatId,
           "src/CE/OS/PPT/Chapter - 1 basic operating.pptx"
         );
       });
       bot.onText(
-        /\/process managment and scheduling/,
+        /\/process_managment_and_scheduling/,
         function onPhotoText(msg) {
+          bot.sendMessage(chatId, "waiting some time....⌛⌛⌛");
+
           bot.sendDocument(
             chatId,
             "src/CE/OS/PPT/Chapter - 2 process managment and scheduling.pptx"
@@ -100,9 +99,13 @@ bot.onText(/\/CE/, function onPhotoText(msg) {
         }
       );
       bot.onText(/\/Deadlock/, function onPhotoText(msg) {
+        bot.sendMessage(chatId, "waiting some time....⌛⌛⌛");
+
         bot.sendDocument(chatId, "src/CE/OS/PPT/Chapter - 4 deadlock.pptx");
       });
-      bot.onText(/\/memory managment/, function onPhotoText(msg) {
+      bot.onText(/\/memory_managment/, function onPhotoText(msg) {
+        bot.sendMessage(chatId, "waiting some time....⌛⌛⌛");
+
         bot.sendDocument(
           chatId,
           "src/CE/OS/PPT/Chapter - 5_1 memory managment.ppt"
@@ -112,23 +115,31 @@ bot.onText(/\/CE/, function onPhotoText(msg) {
           "src/CE/OS/PPT/Chapter - 5_2 memory managment.ppt"
         );
       });
-      bot.onText(/\/io managment/, function onPhotoText(msg) {
+      bot.onText(/\/io_managment/, function onPhotoText(msg) {
+        bot.sendMessage(chatId, "waiting some time....⌛⌛⌛");
+
         bot.sendDocument(chatId, "src/CE/OS/PPT/Chapter - 6 io managment.ppt");
       });
       bot.onText(
-        /\/File Systems in Operating System/,
+        /\/File_Systems_in_Operating_System/,
         function onPhotoText(msg) {
+          bot.sendMessage(chatId, "waiting some time....⌛⌛⌛");
+
           bot.sendDocument(
             chatId,
             "src/CE/OS/PPT/chaptetr-7 File Systems in Operating System.pptx"
           );
         }
       );
-      bot.onText(/\/System Protection/, function onPhotoText(msg) {
+      bot.onText(/\/System_Protection/, function onPhotoText(msg) {
+        bot.sendMessage(chatId, "waiting some time....⌛⌛⌛");
+
         bot.sendDocument(chatId, "src/CE/OS/PPT/Chp 8 System Protection.pptx");
       });
     });
-    bot.onText(/\/FILE/, function sendDocument(msg) {
+    bot.onText(/\/OS_FILE/, function sendDocument(msg) {
+      bot.sendMessage(chatId, "waiting some time....⌛⌛⌛");
+
       bot.sendMessage(chatId, "There is OS FILES");
     });
   });
@@ -138,27 +149,78 @@ bot.onText(/\/CE/, function onPhotoText(msg) {
       "  For DAA   \n" +
         "✌️first select your materials✌️\n" +
         "💻for PPT use command  /" +
-        "PPT🧑‍💻\n" +
+        "DAA_PPT🧑‍💻\n" +
         "💻for FILES use command  /" +
-        "FILE🧑‍💻\n"
-      //   "💻for QUE-BANK use command  /" +
-      //   "FILE🧑‍💻\n"
+        "DAA_FILE🧑‍💻\n"
     );
-    bot.onText(/\/PPT/, function onPhotoText(msg) {
-      bot.sendMessage(chatId, "There is DAA ppt");
+
+    bot.onText(/\/DAA_PPT/, function onPhotoText(msg) {
+      bot.sendMessage(
+        chatId,
+        "  For DAA PPT all chapter   \n" +
+          "✌️first select your chapter\n" +
+          "💻Dowanload" +
+          "/Analysis_of_Algorithms 🧑‍💻\n" +
+          "/Backtracking_and_Branch_Bound 🧑‍💻\n" +
+          "/Divide_Conquer 🧑‍💻\n" +
+          "/Dynamic_Programming 🧑‍💻\n" +
+          "/Exploring_Graph 🧑‍💻\n" +
+          "/Greedy_Algorithms 🧑‍💻\n" +
+          "/String_Matching_Introduction_to_NP_Completeness 🧑‍💻\n"
+      );
+
+      bot.onText(/\/Analysis_of_Algorithms/, function onPhotoText(msg) {
+        bot.sendMessage(chatId, "waiting some time....⌛⌛⌛");
+        bot.sendDocument(chatId, "src/CE/DAA/PPT/Analysis of Algorithms.pdf");
+      });
+      bot.onText(/\/Backtracking_and_Branch_Bound/, function onPhotoText(msg) {
+        bot.sendMessage(chatId, "waiting some time....⌛⌛⌛");
+
+        bot.sendDocument(
+          chatId,
+          "src/CE/DAA/PPT/Backtracking and Branch & Bound.pdf"
+        );
+      });
+      bot.onText(/\/Divide_Conquer/, function onPhotoText(msg) {
+        bot.sendMessage(chatId, "waiting some time....⌛⌛⌛");
+
+        bot.sendDocument(chatId, "src/CE/DAA/PPT/Divide_Conquer.pptx");
+      });
+      bot.onText(/\/Dynamic_Programming/, function onPhotoText(msg) {
+        bot.sendMessage(chatId, "waiting some time....⌛⌛⌛");
+
+        bot.sendDocument(chatId, "src/CE/DAA/PPT/Dynamic_Programming.pptx");
+      });
+      bot.onText(/\/Exploring_Graph/, function onPhotoText(msg) {
+        bot.sendMessage(chatId, "waiting some time....⌛⌛⌛");
+
+        bot.sendDocument(chatId, "src/CE/DAA/PPT/Exploring_Graph.pptx");
+      });
+      bot.onText(/\/Greedy_Algorithms/, function onPhotoText(msg) {
+        bot.sendMessage(chatId, "waiting some time....⌛⌛⌛");
+
+        bot.sendDocument(chatId, "src/CE/DAA/PPT/Greedy_Algorithms.pdf");
+      });
+      bot.onText(
+        /\/String_Matching_Introduction_to_NP_Completeness/,
+        function onPhotoText(msg) {
+          bot.sendMessage(chatId, "waiting some time....⌛⌛⌛");
+
+          bot.sendDocument(
+            chatId,
+            "src/CE/DAA/PPT/String Matching _ Introduction to NP-Completeness.pptx"
+          );
+        }
+      );
     });
-    bot.onText(/\/FILE/, function onPhotoText(msg) {
+    bot.onText(/\/FILE/, function sendDocument(msg) {
+      bot.sendMessage(chatId, "waiting some time....⌛⌛⌛");
+
       bot.sendMessage(chatId, "There is DAA FILES");
     });
   });
 });
-bot.onText(/\/photo/, function onPhotoText(msg) {
-  // From file path
-  const photo = `https://static.remove.bg/remove-bg-web/ea3c274e1b7f6fbbfe93fad8b2b13d7ef352f09c/assets/start-1abfb4fe2980eabfbbaaa4365a0692539f7cd2725f324f904565a9a744f8e214.jpg`;
-  bot.sendPhoto(msg.chat.id, photo, {
-    caption: "I'm a bot!",
-  });
-});
+
 
 //   bot.sendMessage(
 //     chatId,
@@ -171,3 +233,4 @@ bot.onText(/\/photo/, function onPhotoText(msg) {
 //       "💻for Questions bank  /" +
 //       "QUE-BANK🧑‍💻\n"
 //   );
+
